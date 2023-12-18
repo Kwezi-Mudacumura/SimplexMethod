@@ -10,6 +10,6 @@ First, the method assumes that an extreme point is known. (If no extreme point i
 <h2>The program itself does the following:</h2>
 
 <p>The program performs the Simplex Method on a linear programming problem of the form:</br></br>
-maximization z = c^Tx,</br></br>
-subject to Ax ≤ b,</br>
+Maximization z = c^Tx,</br>
+subject to Ax ≤ b:</br>
 where xi ≥ 0 and bi ≥ 0 for all i.</br></br> The program takes in the inputs: the coefficient of the objective function, c, the coefficient matrix of constraints, A and right-hand side of constraints, b. The program constructs the initial simplex tableau, and iterates the simplex method on the tableau until either the problem is found to be unbounded, or a unique solution is reached, or multiple solutions are found. The solution is only be in terms of the original variables. If the problem is unbounded,the program returns 0 (return 0). If a unique solution is reached, the program returns a solution x and objective value z  (return x, z). If multiple solutions are found, the program returns the first optimal solution x, the second optimal solution y and the objective function value z (return x, y, z)</p>
